@@ -1,6 +1,7 @@
 #include <iostream>
 void blind();
 void run();
+void temper();
 int main()
 {
   using namespace std;
@@ -15,6 +16,7 @@ int main()
   blind();
   run();
   run();
+  temper();
 }
 void blind()
 {
@@ -25,4 +27,14 @@ void run()
 {
   using namespace std;
   cout << "See how they run" << endl;
+}
+void temper()
+{
+  using namespace std;
+  cout << "Please enter a Celsius value" << endl;
+  double celsius;
+  cin >> celsius;
+  double fahre = 1.8 * celsius + 32.0;
+  cout << celsius << " degrees celsius is "
+  << fahre << " degrees Fahreheit" << endl;
 }
